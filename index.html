@@ -31,20 +31,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-    .cta {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background: #00C896;
-      color: white;
-      font-weight: bold;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      transition: background 0.2s;
-    }
-    .cta:hover {
-      background: #00a77a;
-    }
     form {
       margin-top: 2rem;
     }
@@ -53,25 +39,25 @@
       font-size: 0.9rem;
       color: #888;
     }
+    input, button {
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
   <img src="linkgenix_logo.png" alt="Linkgenix Logo" class="logo" />
   <h1>Smart Affiliate HTML Blocks</h1>
-  <p>
-    Paste your Amazon product links and instantly generate beautiful, commission-ready HTML blocks. 
-    Export to GitHub, WordPress or Shopify in one click.
-  </p>
+  <p>Paste your Amazon product links and instantly generate beautiful, commission-ready HTML blocks.</p>
 
-  <form name="waitlist" method="POST" data-netlify="true" action="/thank-you.html">
+  <!-- ✅ This is the exact working Netlify form block -->
+  <form name="waitlist" method="POST" data-netlify="true" action="thank-you.html">
     <input type="hidden" name="form-name" value="waitlist">
     <input 
       type="email" 
       name="email" 
       placeholder="Enter your email" 
       required 
-      style="padding: 0.5rem; width: 250px; border-radius: 5px; border: 1px solid #ccc;" 
-    />
+      style="padding: 0.5rem; width: 250px; border-radius: 5px; border: 1px solid #ccc;" />
     <button 
       type="submit" 
       style="padding: 0.5rem 1rem; background: #00C896; color: white; border: none; border-radius: 5px; font-weight: bold; margin-left: 10px;">
