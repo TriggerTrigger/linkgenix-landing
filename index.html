@@ -64,8 +64,11 @@
   </p>
 
   <form name="waitlist" method="POST" data-netlify="true" action="thank-you.html">
-    <input type="email" name="email" placeholder="Enter your email" required style="padding: 0.5rem; width: 250px; border-radius: 5px; border: 1px solid #ccc;" />
-    <button type="submit" style="padding: 0.5rem 1rem; background: #00C896; color: white; border: none; border-radius: 5px; font-weight: bold; margin-left: 10px;">
+  <input type="hidden" name="form-name" value="waitlist">
+  <input type="email" name="email" placeholder="Enter your email" required />
+  <button type="submit">Join Waitlist</button>
+</form>
+
       Join Waitlist
     </button>
   </form>
